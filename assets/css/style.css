@@ -1,21 +1,12 @@
-.container {
-    display: grid;
-    grid-template-columns: repeat( 4, 1fr );
-    grid-template-rows: 80px 300px auto 40px;
-    grid-template-areas: "navbar navbar navbar navbar"
-                         "header header header header"
-                         "main   main   main  sidebar"
-                         "footer footer footer footer"}
+
 
 .navbar {
-    grid-area: navbar;
+   
     background-color: #0a1266;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    
 }
 .navbar ul {
-    display: flex;
+  
     padding: 10px;
     list-style: none;
 }
@@ -30,11 +21,10 @@
 }
 
 .header {
-    grid-area: header;
+    
     background-image: url(../images/piasaje.png);
     background-size: cover;
-    display: flex;
-    justify-content: center; }
+    }
 
 .headerCard{
     color: white;
@@ -62,24 +52,23 @@
     transform: scale(1.2);
 
 }
-.main {
-    grid-area: main ;
-}
+   
+
 .main h2 {
     margin: 5px 5px 5px 10px;}
 
 
 
 .card {
-    display: flex;
-    margin: 10px;
-    padding: 5px;}
+    margin: 30px 10px 35px 35px;
+    padding: 10px;
+    width: 240px;}
 
 
 .cardInfo {
     width: 240px;
     margin-left: 10px;
-    padding: 10px;
+    padding: 20px;
     font-family: 'Oswald', sans-serif;}
 
 .card img:hover {
@@ -87,24 +76,19 @@
     
 }
 
-.aside {
-    grid-area: sidebar;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center ;
-    }
+
 
 .cardAdd {       
     position: relative;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
     border-radius: 10px;
     width: 150px;
     height: 100px;
-    flex-wrap: wrap;
-    overflow: hidden  
-    ;}
+    
+    overflow: hidden;
+    margin: 10px;
+
+      
+    }
 
 .addInfo {
     position: absolute;
@@ -114,10 +98,12 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0.500);
     color: rgb(255, 255, 255);
+    font-size: 10px
     
 }
 
 
-.footer {
-    
+
+.asideP {
+    margin-top: 50px;
 }
